@@ -2,6 +2,7 @@ Script que permiti a apresentação de letras de música do site [Letras.mus.br]
 
 Com o Script Desativado:
 ![Sem Extensão](https://user-images.githubusercontent.com/35195646/67626642-73fd4500-f824-11e9-9e3f-07445834f4a4.png)
+
 Com o Script Ativado:
 ![Com extensão](https://user-images.githubusercontent.com/35195646/67626731-1ff36000-f826-11e9-8a9a-05fb2e562fe4.png)
 
