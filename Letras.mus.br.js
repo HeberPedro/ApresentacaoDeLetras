@@ -15,11 +15,11 @@ function loadPage(urlCurrent) {
         var html = new DOMParser().parseFromString(this.responseText, "text/html")
         html = html.documentElement;
         let el = html.getElementsByTagName("H1");
-        var nameSong = el[el.length-1].outerHTML + "\n";
+        const nameSong = el[el.length-1].outerHTML + "\n";
         el = html.getElementsByTagName("H2")[0];
         el.innerHTML = el.innerText;
-        var musicArtist = el.outerHTML + "\n";
-        var amountParagraphs = html.getElementsByTagName("P")[0].parentElement.childElementCount;
+        const musicArtist = el.outerHTML + "\n";
+        const amountParagraphs = html.getElementsByTagName("P")[0].parentElement.childElementCount;
 
         // Writing HTML
         document.write("<!DOCTYPE html>\n");
