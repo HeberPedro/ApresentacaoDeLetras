@@ -1,2 +1,2 @@
-# ApresentacaoDeLetras
-Script para exibir letras de música, como apresentação de slides
+Script que permiti que apresente letras de música do site [Letras.mus.br](https://www.letras.mus.br/), parecendo muito com o power point ou ferramentas similares de apresentações de slides.
+Usando apenas a extensão [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo?hl=pt-BR)/[Greasemonkey](https://addons.mozilla.org/pt-BR/firefox/addon/greasemonkey/) no navegador.
