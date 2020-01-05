@@ -3,7 +3,6 @@
 // @description  Display lyrics such as slideshow
 // @author       HVP
 // @include      *://www.letras.mus.br/*/*
-// @namespace    http://tampermonkey.net/
 // ==/UserScript==
 
 loadPage(window.location.href);
@@ -32,7 +31,8 @@ function loadPage(urlCurrent) {
                 "<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script>\n" +
                 "<style>\n" +
                     "body{background-color:rgb(35,31,32);font-family:Cambria,Georgia,serif;word-wrap:break-word;text-align:center;margin:0;overflow-x:hidden;overflow-y:hidden}\n" +
-                    "h1{color:rgb(255,102,0);font-size:75px;font-weight:700;padding-top:40px}\n" +
+                    "p{margin: 5vh 20vh 5vh 20vh;}\n" +
+                    "h1{color:rgb(255,102,0);font-size:75px;font-weight:700;padding-top:10px}\n" +
                     "h2,a{color:rgb(183,183,0);font-size:30px;font-weight:700;line-height:10%}\n" +
                     ".container{width:100vw;height:75vh;display:flex;flex-direction:row;justify-content:center;align-items:center}" +
                     "#carousel{width:100vw;height:80vh;position:absolute;display:flex;flex-direction:row;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center}\n " +
@@ -79,11 +79,13 @@ function loadPage(urlCurrent) {
                             "<span class='carousel-control-next-icon' aria-hidden='true'></span>\n"+
                             "<span class='sr-only'>Next</span>\n"+
                         "</a>\n");
-                    document.write("</div>\n");
-                document.write("</div>\n");
+                    document.write("</div>\n"); // Carousel
+                document.write("</div>\n"); // Container
+        
                 document.write("<script>\n" +
                     "$('#carousel').carousel ({ interval: false });" + // To remove the carousel auto slider
                 "</script>\n");
+        
             document.write("</body>\n");
         document.write("</html>\n");
 
